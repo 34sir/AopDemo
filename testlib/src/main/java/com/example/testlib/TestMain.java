@@ -15,6 +15,7 @@ public class TestMain {
         TestMethodClass testMethodClass = new TestMethodClass();
         testMethodClass.spendTime1ms();
         TestMethodClass.spendTime2ms();
+        testMethodClass.spendTime3ms();
 
         //注解在类上,子类继承,成功,但是无法识别出是子类
         TestSubClass testSubClass = new TestSubClass();

@@ -37,4 +37,13 @@ public class TestMethodClass {
             e.printStackTrace();
         }
     }
+
+    @DebugLog
+    public final void spendTime3ms(){
+        try {
+            Thread.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
