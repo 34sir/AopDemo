@@ -1,5 +1,6 @@
 package  com.hc.plugin
-
+import com.android.build.gradle.AppPlugin
+import com.android.build.gradle.LibraryPlugin
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.compile.JavaCompile
@@ -12,9 +13,19 @@ public class MyPlugin implements Plugin<Project> {
     void apply(Project project) {
         println "dddd******************d"
 
+        def hasApp = project.plugins.withType(AppPlugin)
+        def hasLib = project.plugins.withType(LibraryPlugin)
+        if (!hasApp && !hasLib) {
+            throw new IllegalStateException("'android' or 'android-library' plugin required.")
+        }
 
         final def log = project.logger
-        final def variants = project.android.applicationVariants
+        final def variants
+        if (hasApp) {
+            variants = project.android.applicationVariants
+        } else {
+            variants = project.android.libraryVariants
+        }
 
         project.dependencies {
             // TODO this should come transitively
