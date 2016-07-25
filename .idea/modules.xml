@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AopDemo.iml" filepath="$PROJECT_DIR$/AopDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/aoplib/aoplib.iml" filepath="$PROJECT_DIR$/aoplib/aoplib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libinlib/libinlib.iml" filepath="$PROJECT_DIR$/libinlib/libinlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/testlib/testlib.iml" filepath="$PROJECT_DIR$/testlib/testlib.iml" />
     </modules>
   </component>

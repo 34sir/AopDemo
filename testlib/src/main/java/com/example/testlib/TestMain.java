@@ -1,5 +1,7 @@
 package com.example.testlib;
 
+import com.example.libinlib.TestLog;
+
 /**
  * Created by 835127729qq.com on 16/7/22.
  */
@@ -37,5 +39,8 @@ public class TestMain {
         testInterfaceMethodSubClass.spendTimeNms(14);
         TestInterfaceMethodClass testInterfaceMethodClass = new TestInterfaceMethodSubClass();
         testInterfaceMethodClass.spendTimeNms(15);
+
+        TestLog testLog = new TestLog();
+        testLog.doSomeThing();
     }
 }

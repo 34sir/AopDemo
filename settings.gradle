@@ -1,1 +1,1 @@
-include ':app', ':aoplib', ':testlib'
+include ':app', ':aoplib', ':testlib', ':libinlib'
